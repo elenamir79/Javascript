@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript. Lesson1, DZ1</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        //функция сложения двух чисел
+            function sum(a, b) {
+            return a + b;
+        }
+
+        let a =+prompt("Введите первое число");
+        let b =+prompt("Введите второе число");
+
+        let result = sum(a, b);
+        alert("Сумма двух чисел: " + result);
+
+
+        //функция умножения двух чисел
+        function multiplay(c, d) {
+            return c * d;
+        }
+
+        let c =+prompt("Введите третье число");
+        let d =+prompt("Введите четвертое число");
+
+        let result1 = multiplay(c, d);
+        alert("Произведение двух чисел: " + result1);
+
+        //функция вычитания двух чисел
+        function minus(e, f) {
+            return e - f;
+        }
+
+        let e =+prompt("Введите пятое число");
+        let f =+prompt("Введите шестое число");
+
+        let result2 = minus(e, f);
+        alert("Разность двух чисел: " + result2);
+
+        //функция деления двух чисел
+        function devide(y, z) {
+            return y / z;
+        }
+
+        let y =+prompt("Введите седьмое число");
+        let z =+prompt("Введите восьмое число");
+
+        let result3 = devide(y, z);
+        alert("Частность двух чисел: " + result3);
+
+    </script>
+</body>
+</html>

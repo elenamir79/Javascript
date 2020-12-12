@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript. Lesson1, DZ1</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+        function mathOperation(arg1, arg2, operation) {
+            switch(operation) {
+                case "сложение":
+                    alert("Сумма чисел: " + (arg1 + arg2));
+                    break;
+                case "вычитание":
+                    alert("Разность чисел: " + (arg1 - arg2));
+                    break;
+                case "умножение":
+                    alert("Произведение чисел: " + (arg1 * arg2));
+                    break;
+                case "деление":
+                    alert("Частное чисел: " + (arg1 / arg2));
+                    break;
+                default:
+                    alert("Не знаю такой функции");
+            }
+            
+        }
+
+        let arg1 =+prompt("Введите первое число");
+        let arg2 =+prompt("Введите второе число");
+        let operation = prompt("Введите матфункцию: сложение, вычитание, умножение, деление");
+
+        mathOperation(arg1, arg2, operation);
+
+    </script>
+</body>
+</html>
