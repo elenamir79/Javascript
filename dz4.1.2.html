@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript. Lesson4, DZ1.1</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        
+        function Post(author, text, date) {
+            this.author = author;
+            this.text = text;
+            this.date = date;
+            edit.function () {
+                this.text = newtext;
+            }
+        }
+
+        Post.edit();
+
+        function AttachedPost (author, text, date) {
+            Post.call(this, author, text, date);
+            this.highlighted = highlighted;
+        }
+
+        function makeTextHighlighted() {};
+        
+              
+        //es6
+        class Post {
+            constructor (author, text, date) {
+                this.author = author;
+                this.text = text;
+                this.date = date;
+                edit () {
+                console.log("Редактирование записи");
+            }
+        }
+
+        const post1 = new Post ("Alex", "lorem", "12.02.2020");
+        post1.edit();
+
+        class AttachedPost extends Post {
+            constructor (author, text, date, highlighted) {
+                super (author, text, date);
+                this.highlighted = highlighted;
+            }
+        }
+
+        edit () {
+                console.log("Редактирование записи");
+        }
+        
+        const AttachedPost1 = new AttachedPost ("Alex", "lorem", "12.02.2020", "false");
+        AttachedPost1.edit();
+
+        function makeTextHighlighted() {};
+        
+                
+    </script>
+</body>
+</html>
